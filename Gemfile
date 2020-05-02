@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
 gem 'jekyll-paginate'
 
-gem "jekyll", "~> 4.0"
+gem 'wdm'
+
+gem "jekyll", github: "jekyll/jekyll"
