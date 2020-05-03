@@ -19,17 +19,17 @@ const PRECACHE_LIST = [
   "./js/bootstrap.min.js",
   "./js/cr-blog.min.js",
   "./js/snackbar.js",
+  "./js/lightbox.js",
   "./img/avatar-cr.jpg",
   "./img/home-bg.jpg",
   "./img/404-bg.jpg",
   "./css/cr-blog.min.css",
+  "./js/lightbox.css",
   "./css/bootstrap.min.css"
 ]
 const HOSTNAME_WHITELIST = [
   self.location.hostname,
-  "huangxuan.me",
-  "yanshuo.io",
-  "cdnjs.cloudflare.com"
+  "chenriang.me",
 ]
 const DEPRECATED_CACHES = ['precache-v1', 'runtime', 'main-precache-v1', 'main-runtime']
 
