@@ -5,12 +5,11 @@ subtitle:   "Setting the parallelism and partition right"
 date:       2020-05-03 14:24:00
 author:     "ChenRiang"
 catalog: true
+header-style: text
 tags:
     - Flink 
     - Kafka
 ---
-
-# Background
 
 Something interesting was found when running Flink job that consumes Kafka stream data as a source. **No matter how many parallelism there is always 1 task manager consuming data from Kafka**.
 
@@ -45,8 +44,7 @@ Learning:
 
 <br>
 
-# Reference 
-[Kafka + Flink: A Practical, How-To Guide](https://www.ververica.com/blog/kafka-flink-a-practical-how-to)
-
-[Kafka partitions and Flink parallelism](https://riptutorial.com/apache-flink/example/27996/kafka-partitions-and-flink-parallelism)
+### Reference 
+1. [Kafka + Flink: A Practical, How-To Guide](https://www.ververica.com/blog/kafka-flink-a-practical-how-to)
+2. [Kafka partitions and Flink parallelism](https://riptutorial.com/apache-flink/example/27996/kafka-partitions-and-flink-parallelism)
 
