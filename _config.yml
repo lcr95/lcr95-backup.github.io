@@ -56,10 +56,6 @@ kramdown:
 # Disqus settings
 disqus_username: chenriang-me
 
-# Netease settings
-netease_comment: false
-
-
 
 # Analytics settings
 # Baidu Analytics 
