@@ -25,16 +25,16 @@ List of plugin: [doc](https://www.elastic.co/guide/en/elasticsearch/plugins/7.7/
     ```yaml
     version: '2'
     services:
-    es_v7:
+      es_v7:
         image: elasticsearch:7.7.0
         environment:
-        - node.name=es01
-        - cluster.name=es-docker-cluster
-        - discovery.type=single-node
+          - node.name=es01
+          - cluster.name=es-docker-cluster
+          - discovery.type=single-node
         ports:
-        - "9200:9200"
+          - "9200:9200"
         volumes:
-        - .:/mnt
+          - .:/mnt
         entrypoint: /mnt/docker-entrypoint-es.sh
 
     ```
