@@ -9,7 +9,6 @@ header-style: text
 tags:
     - Elasticserach 
     - Docker 
-    - Docker-Compose
 ---
 
 **Elasticsearch version : 7.7**

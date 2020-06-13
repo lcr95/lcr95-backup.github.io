@@ -7,9 +7,7 @@ author:     "ChenRiang"
 catalog: true
 header-style: text
 tags:
-    - Matrixs
-    - F1 Score 
-    - Dice Coefficient
+    - Algorithm
 ---
 
 F1 score is equivalent to Dice Coefficient(Sørensen–Dice Coefficient). In the section below, we will prove it with an example. 
