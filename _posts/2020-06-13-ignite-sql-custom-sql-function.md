@@ -76,6 +76,7 @@ Edit the configuration file ``<path>/apache-ignite-2.8.1-bin/config/default-conf
 ```
 
 **Note: The template name have to end with '*', else the template will not be found in runtime.**
+
 Source Code : [Github](https://github.com/lcr95/ignite-custom-sql-function-example)
 
 # Run Ignite Server
