@@ -22,7 +22,7 @@ Note: We will be running in Window docker desktop environment.
 Source code: [GitHub](https://github.com/lcr95/janusgraph-helm)
 
 # Whats is Helm
-Helm is a package manager for k8s. It is equivalent of apt or yum on linux. Helm deploys chart(~package application). 
+Helm is a package manager for k8s that equivalent to apt or yum on linux. It deploys chart(~package application). 
 
 # Helm chart folder structure
 Below is the folder structure for our Janusgraph Helm's chart:
@@ -36,7 +36,7 @@ Below is the folder structure for our Janusgraph Helm's chart:
 ```
 
 ## Chart.yaml
-It is a YAML file which contains the information of the chart. We will describe the chart as below:  
+A YAML file which contains the information of the chart. We will describe the chart as below:  
 
 ```yaml
 apiVersion: v1
@@ -47,7 +47,7 @@ description: A simple customized janusgraph chart that use cassandara and elasti
 ```
 
 ## requirements.yaml
-It is a YAML file which lists out the dependencies for the chart. We will be using Cassandra and Elasticsearch form Bitnami.
+A YAML file which lists out the dependencies for the chart. We will be using Cassandra and Elasticsearch form Bitnami.
 ```yaml
 dependencies:
 - name: cassandra
