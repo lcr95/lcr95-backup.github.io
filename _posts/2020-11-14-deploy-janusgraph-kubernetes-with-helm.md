@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Deploy Janusgraph in Kubernetes with Helm"
+title:      "Deploy Janusgraph on Kubernetes with Helm"
 subtitle:   ""
 date:       2020-11-14 12:00:00
 author:     "ChenRiang"
