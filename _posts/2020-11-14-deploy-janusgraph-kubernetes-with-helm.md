@@ -160,15 +160,61 @@ helm install janusgraph-helm .
 ```
 
 ## Validate Environment
-Run `kubectl get pods` to check whether environment is up.
+1. Run `kubectl get pods` to check whether environment is up.
 Example:
-```
-❯ kubectl get pods
-NAME                                                              READY   STATUS    RESTARTS   AGE
-janusgraph-9bf995c79-lhmtg                                        1/1     Running   2          6h31m
-janusgraph-helm-cassandra-0                                       1/1     Running   2          6h31m
-janusgraph-helm-elasticsearch-coordinating-only-549d8b75c-g6mqz   1/1     Running   2          6h31m
-janusgraph-helm-elasticsearch-data-0                              1/1     Running   2          6h31m
-janusgraph-helm-elasticsearch-master-0                            1/1     Running   2          6h31m
-```
+    ```
+    ❯ kubectl get pods
+    NAME                                                              READY   STATUS    RESTARTS   AGE
+    janusgraph-9bf995c79-lhmtg                                        1/1     Running   2          6h31m
+    janusgraph-helm-cassandra-0                                       1/1     Running   2          6h31m
+    janusgraph-helm-elasticsearch-coordinating-only-549d8b75c-g6mqz   1/1     Running   2          6h31m
+    janusgraph-helm-elasticsearch-data-0                              1/1     Running   2          6h31m
+    janusgraph-helm-elasticsearch-master-0                            1/1     Running   2          6h31m
+    ```
 
+2. Next, we will bring up the gremlin interactive console. <br/>
+We know that our janusgraph pod named `janusgraph-9bf995c79-lhmtg `, so run the following command to bring up the janusgraph command.
+    ```bash
+    kubectl exec -it janusgraph-9bf995c79-lhmtg -- bash
+    ```
+
+3. Execute `bin/gremlin.sh` and you should 
+    ```
+    root@janusgraph-9bf995c79-lhmtg:/opt/janusgraph# bin/gremlin.sh
+    Nov 15, 2020 9:00:41 AM java.util.prefs.FileSystemPreferences$1 run
+    INFO: Created user preferences directory.
+    
+             \,,,/
+             (o o)
+    -----oOOo-(3)-oOOo-----
+    SLF4J: Class path contains multiple SLF4J bindings.
+    SLF4J: Found binding in [jar:file:/opt/janusgraph/lib/slf4j-log4j12-1.7.12.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+    SLF4J: Found binding in [jar:file:/opt/janusgraph/lib/logback-classic-1.1.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+    SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+    SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+    plugin activated: tinkerpop.server
+    plugin activated: tinkerpop.tinkergraph
+    09:00:43 WARN  org.apache.hadoop.util.NativeCodeLoader  - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+    plugin activated: tinkerpop.hadoop
+    plugin activated: tinkerpop.spark
+    plugin activated: tinkerpop.utilities
+    plugin activated: janusgraph.imports
+    gremlin>
+    ```
+4. Connect to the janusgraph gremlin server.
+    ```
+    gremlin> :remote connect tinkerpop.server conf/remote.yaml
+    ==>Configured localhost/127.0.0.1:8182
+    ```
+
+5. Point the gremlin console from local to janusgraph gremlin server.
+    ```
+    gremlin> :remote console
+    ==>All scripts will now be sent to Gremlin Server - [localhost/127.0.0.1:8182] - type ':remote console' to return to local mode
+    ```
+   
+6. Run count node to validate.
+    ```
+    gremlin> g.V().count()
+    ==>0
+    ```
