@@ -213,7 +213,7 @@ We know that our janusgraph pod named `janusgraph-9bf995c79-lhmtg `, so run the 
     ==>All scripts will now be sent to Gremlin Server - [localhost/127.0.0.1:8182] - type ':remote console' to return to local mode
     ```
    
-6. Run count node to validate.
+6. Run node count to validate.
     ```
     gremlin> g.V().count()
     ==>0
