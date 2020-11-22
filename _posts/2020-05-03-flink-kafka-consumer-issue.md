@@ -11,7 +11,7 @@ tags:
     - Kafka
 ---
 
-Something interesting was found when running Flink job that consumes Kafka stream data as a source. **No matter how many parallelism there is always 1 task manager consuming data from Kafka**.
+Something interesting found when running Flink job that consumes Kafka stream data as a source. **No matter how much parallelism set there is always 1 task manager consuming data from Kafka**.
 
 
 
@@ -20,9 +20,9 @@ Something interesting was found when running Flink job that consumes Kafka strea
 <br>
 
 # Findings
-Flink creates consumer depends on the number of parallelism user set. When Flink consumers that created is more than Kafka partition, some of the Flink consumers will just idle!
+Flink creates consumer depends on the number of parallelism user set. When Flink consumers that created is more than Kafka partition, some Flink consumers will idle!
 
-So, the problem is in Kafka. The topic partition created by default is 1. By adding Kafka topic partitions that match Flink parallelism will solve this issue. 
+The problem is in Kafka. The topic partition created by default is 1. By adding Kafka topic partitions that match Flink parallelism will solve this issue. 
 
 <br>
 There is 3 possible scenario cause by number of Kafka partition and number of Flink parallelism :
