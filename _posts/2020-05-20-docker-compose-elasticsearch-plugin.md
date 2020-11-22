@@ -90,7 +90,7 @@ In my case, I'm trying to import [analysis-pinyin](https://github.com/medcl/elas
 
 
 # Validate
-We can validate whether the plugin is successfully installed by using Elasticsearch [cat plugin api](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-plugins.html).
+Validate is the plugin successfully installed by using Elasticsearch [cat plugin api](https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-plugins.html).
 
 Postman: 
 {% include image.html src="post-es-plugin-list.png" data="group" title="Validate using POSTMAN" %}

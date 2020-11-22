@@ -12,7 +12,7 @@ tags:
 
 Apache Ignite: 2.8.1
 
-In this example, we will create a custom function that can be used in SQL Ignite.
+In this example, we will create a custom function that can be use by SQL Ignite.
 
 # Ignite Installation 
 Refer [documentation](https://apacheignite.readme.io/v1.3/docs/getting-started) for more infomation.
@@ -42,7 +42,7 @@ public class MyCustomFunction {
 }
 ```
 
-Compile it into a jar. In our case, a jar named ``ignite-sql-custom-function-example-1.0.0.jar`` is generated.
+Compile it into a jar. In our case, we will generate a jar named ``ignite-sql-custom-function-example-1.0.0.jar``.
 
 
 # Register Custom Function
@@ -103,7 +103,7 @@ CREATE TABLE Student (
   INSERT INTO Student (ID, NAME,SCORE) VALUES (3, 'Jason', 30);
 ```
 
-3. Query student who is passed the exam:
+3. Query student who had passed the exam:
 ```sql
 SELECT * 
 FROM Student
