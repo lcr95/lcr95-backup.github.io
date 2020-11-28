@@ -18,32 +18,32 @@ In this article, we will be adding another 2 plugin for our ZSH:
 
 # Auto Suggestion 
 1. Clone the plugin repo to a directory(`~/.zsh/zsh-autosuggestions`).
-    ```shell script
+    ```shell
     git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
     ```
 
 2. Autostart the plugin when the terminal is launching.
-    ```shell script
+    ```shell
     echo 'source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
     ```
 3. Reload the terminal with new changes.
-    ```shell script
+    ```shell
     source ~/.zshrc
     ```
 
 # Syntax Highlighting
 1. Clone the plugin repo to a directory(`~/.zsh/zsh-autosuggestions`).
-    ```shell script
+    ```shell
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-syntax-highlighting
     ```
 
 2. Autostart the plugin when the terminal is launching.
-    ```shell script
+    ```shell
     echo 'source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
     ```
 
 3. Reload the terminal with new changes.
-    ```shell script
+    ```shell
     source ~/.zshrc
     ```
 

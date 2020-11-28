@@ -10,7 +10,7 @@ tags:
     - MySQL
 ---
 
-In my recent work, I have a requirement to increase the throughput of MySQL which do heavy READ operation and light WRITE operation. 
+In my recent work, I have a requirement to increase the throughput of MySQL which do **heavy READ** operation and **light WRITE** operation. 
 We all know that single-node MySQL will defiantly not able to achieve it and running it in cluster mode(Master-Slave) would probably 
 could help, as we could spread out the workload by scaling up the number of slave instance.
 
