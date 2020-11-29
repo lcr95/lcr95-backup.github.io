@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Setup Vault with Helm"
+title:      "How to setup Vault with Helm"
 subtitle:   ""
 date:       2020-11-29 12:00:00
 author:     "ChenRiang"
