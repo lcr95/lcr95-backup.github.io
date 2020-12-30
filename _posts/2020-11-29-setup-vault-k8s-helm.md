@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "How to setup Vault with Helm"
-subtitle:   ""
+title:      "Vault Setup in Kubernetes"
+subtitle:   "With Helm" 
 date:       2020-11-29 12:00:00
 author:     "ChenRiang"
 header-style: text
@@ -302,7 +302,7 @@ We will use [*cfssl*](https://github.com/cloudflare/cfssl) to generate SSL certi
     
     
 ## Run Vault
- 1. Helm install the Vault.<br/> `helm install helm-vault`
+ 1. Helm install the Vault.<br/> `helm install helm-vault .`
   <br/><br/> 
  
  2. Unseal vault with following command <br> `kubectl exec pod/helm-vault-0 -- vault operator init -key-shares=1 -key-threshold=1`
