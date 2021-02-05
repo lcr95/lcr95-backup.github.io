@@ -115,7 +115,7 @@ This authorizes all the pod that running with `default` service account in all n
 10. Verify the role creation.
 ```bash
     K8S_DEFAULT_TOKEN_NAME=$(kubectl get serviceaccounts/default -o jsonpath='{.secrets[0].name}')
-    K8S_DEFAULT_TOKEN=$(kubectl get secret $K8S_TOKEN_NAME -o jsonpath='{.data.token}'| base64 --decode)
+    K8S_DEFAULT_TOKEN=$(kubectl get secret $K8S_DEFAULT_TOKEN_NAME -o jsonpath='{.data.token}'| base64 --decode)
    
     kubectl exec helm-vault-0 -- sh -c "
         vault write auth/kubernetes/login \
