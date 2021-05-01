@@ -53,7 +53,7 @@ p2.join()
 
 In the code snippet above, we will spawn 2 thread and process that execute method `hello_func`. 
 
-Result:
+**Output**:
 ```text
 greeting from -  t1
 greeting from -  t2
@@ -103,7 +103,7 @@ print("computation time for multiprocessing : ", (time.time() - p_time))
 ```
 In the code snippet above, we spawn 2 thread and process to execute a method `heavy_calculation` which will run a CPU intensive computation logic.
 
-Result:
+**Output**:
 ```text
 t2  done calculation
 t1  done calculation
