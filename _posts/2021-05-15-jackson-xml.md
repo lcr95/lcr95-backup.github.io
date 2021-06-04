@@ -43,14 +43,14 @@ MyPOJO myPojo = xmlMapper.readValue(xmlString, MyPOJO.class);
 **Writing XML**
 ```java
 ByteArrayOutputStream bs = new ByteArrayOutputStream();
-mapper.writeValue(bs, myPojo);
+xmlMapper.writeValue(bs, myPojo);
 String xmlString = bs.toString();
 ```
 
 
 Use `writerWithDefaultPrettyPrinter()` method to enable pretty print for XML mapper.
 ```java
-mapper.writerWithDefaultPrettyPrinter().writeValue(bs, myPojo);
+xmlMapper.writerWithDefaultPrettyPrinter().writeValue(bs, myPojo);
 ```
 
 
@@ -63,7 +63,7 @@ use in serialization.
 <student>
     <name>Adam</name>
 </student>
-``` 
+```
 
 ```java
 @Data  //lombok
