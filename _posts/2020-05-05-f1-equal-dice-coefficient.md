@@ -40,7 +40,7 @@ In this section, we will take image segmentation as an example.
 
 Let's say we have a model that will classify apple.
 
-{% include image.html src="post-model-example.png" data="group" title="Flink UI Console" %}
+{% include image.html src="post-model-example.png" data="group" title="Example" %}
 
 
  The box area in the image above is where the area that the model predicts it as an apple. We can tell that the box is not covering the whole apple, so meaning that the model has made some mistakes. 
