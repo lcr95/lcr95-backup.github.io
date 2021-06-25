@@ -17,4 +17,4 @@ $ bundle install
 
 ```sh
 $ bundle exec jekyll serve  # alternatively, npm start
-```
+``` 
