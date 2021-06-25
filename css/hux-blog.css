@@ -1,8 +1,3 @@
-/*!
- * CR Blog v1.8.2 (http://chenriang.github.io)
- * Copyright 2020 ChenRiang <chenriang@gmail.com>
- */
-
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
@@ -43,7 +38,7 @@
 .sidebar-container .short-about img {
   width: 80%;
   display: block;
-  border-radius: 50%;
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 .sidebar-container .short-about p {
@@ -191,7 +186,7 @@
     Multi-line snackbar height: 80 dp
     Text: Roboto Regular 14 sp
     Action button: Roboto Medium 14 sp, all-caps text
-    Default background fill: #323232 100%  
+    Default background fill: #323232 100%
   */
     left: 0px;
     right: 0px;
