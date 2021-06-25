@@ -7,7 +7,7 @@ author:     "ChenRiang"
 catalog: true
 header-style: text
 tags:
-    - Elasticserach
+    - Elasticsearch
 ---
 
 **Elasticsearch version : 7.7**
@@ -16,7 +16,7 @@ In this article, we will look into how we search a keyword that has similar pron
 
 
 # Plugin Installation
-In this article, we will use docker as the enviroment.Checkout [Install plugin on Elasticserach container]({% post_url 2020-05-20-docker-compose-elasticsearch-plugin %}) for more infomation. 
+In this article, we will use docker as the enviroment.Checkout [Install plugin on Elasticsearch container]({% post_url 2020-05-20-docker-compose-elasticsearch-plugin %}) for more infomation. 
 
 Add the following new inline in ``docker-entrypoint-es.sh`` :
 ```bash
@@ -41,19 +41,19 @@ In this example, we trying to stimulate a situation that we would enable plugin 
       }   
     }
     ```
-<br>
+    <br>
 
 2. Close the index.
     ```
     POST /mytest/_close
     ```
     **Note : Index must be closed before analyzer and filter can be added.
-<br><br>
+    <br><br>
 
 3. Add the plugin by defining analyzer and filter via [Setting API](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-update-settings.html).
     ```
     PUT /mytest/_settings
-
+    
     {
     "analysis": {
         "analyzer": {
@@ -74,15 +74,15 @@ In this example, we trying to stimulate a situation that we would enable plugin 
         }
       }
     }
-
+    
     ```
-<br>
+    <br>
 
 4. Re-open the index.
     ```
     POST /mytest/_open
     ```
-<br>
+    <br>
 
 5. Define mapping that will trigger ``my_phonetic_filter``.
     ```
