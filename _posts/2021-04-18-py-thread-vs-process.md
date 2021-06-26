@@ -8,6 +8,7 @@ header-style: text
 catalog: true
 tags:
     - Python
+    - Concurrency
 ---
 
 My first impression towards python multithreading and multiprocessing is that both of them work pretty much the same.
