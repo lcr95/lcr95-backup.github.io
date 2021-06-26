@@ -17,13 +17,13 @@ const PRECACHE_LIST = [
   "./offline.html",
   "./js/jquery.min.js",
   "./js/bootstrap.min.js",
-  "./js/hux-blog.min.js",
+  "./js/cr-blog.min.js",
   "./js/snackbar.js",
   "./js/lightbox.js",
   "./img/avatar-cr.jpg",
   "./img/home-bg.jpg",
   "./img/404-bg.jpg",
-  "./css/hux-blog.min.css",
+  "./css/cr-blog.min.css",
   "./js/lightbox.css",
   "./css/bootstrap.min.css"
 ]
@@ -98,7 +98,6 @@ const getRedirectUrl = (req) => {
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(CACHE).then(cache => {
-    console.log('Service worker: caching files')
       return cache.addAll(PRECACHE_LIST)
         .then(self.skipWaiting())
         .catch(err => console.log(err))
@@ -160,9 +159,9 @@ var fetchHelper = {
  */
 self.addEventListener('fetch', event => {
   // logs for debugging
-  console.log(`fetch ${event.request.url}`)
-  console.log(` - type: ${event.request.type}; destination: ${event.request.destination}`)
-  console.log(` - mode: ${event.request.mode}, accept: ${event.request.headers.get('accept')}`)
+  //console.log(`fetch ${event.request.url}`)
+  //console.log(` - type: ${event.request.type}; destination: ${event.request.destination}`)
+  //console.log(` - mode: ${event.request.mode}, accept: ${event.request.headers.get('accept')}`)
 
   // Skip some of cross-origin requests, like those for Google Analytics.
   if (HOSTNAME_WHITELIST.indexOf(new URL(event.request.url).hostname) > -1) {
