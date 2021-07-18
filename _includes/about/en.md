@@ -1,15 +1,17 @@
 I'm a software guy who believes in technology and data. 
-<br><br><br>
-You might be asking why am I creating this blog?
+<br><br>
 
->|  _Making every minute count and documenting it while you do._   --  [Gary Vaynerchuk](https://www.garyvaynerchuk.com/creating-content-that-builds-your-personal-brand/)
+You might be asking why am I creating this blog? Isn't it documenting is something that software developers hate the most.
 
 
-I get fascinated by the idea by Gray, _"document , don't create"_.  Everybody just wanted to share about the best thing they have achieved and they will try hard to create something fancy. 
-They normally forget the fact that sometimes the process/journey is more meaningful and valuable than the success itself. 
+>|  _document, don't create._   --  [Gary Vaynerchuk](https://www.garyvaynerchuk.com/creating-content-that-builds-your-personal-brand/)
 
-Documenting, is something that most of the software developers and engineers hate the most. Neither do I.
-As a software engineer, I always need to catch up with tons of technologies/ frameworks/ libraries to create software. 
-Isn't that it is a waste if we did not record down the journey/learning? 
 
-Thus, I decided to start document down the journey and the things I learned.
+I get fascinated by the idea by Gray, _"document, don't create"_.  It is a marketing strategy that 
+talks about publishing tons of contents in regular basis and documenting the process is the best way to nail it. 
+
+This made me think about giving back to the community doesn't really need to create something new and fancy.
+My job as a software engineer required me to catch up with lots of technologies/ software frameworks/ software libraries.
+It is a waste if I did not record down the journey/learning, isn't it?
+
+Thus, I decided to start document down the journey, and all the things I learned.
