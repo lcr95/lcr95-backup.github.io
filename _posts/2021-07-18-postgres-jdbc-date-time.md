@@ -174,4 +174,9 @@ Here's why:
 
 # Conclusion
 
-In this article, we look into the implementation of legacy and modern java date time API in Postgres JDBC. Although the old legacy Java API still works perfectly, migrating to the new Java date time API is definitely the way to go     
+In this article, we look into the implementation of legacy and modern java date time API in Postgres JDBC. Although the old legacy Java API still works perfectly, migrating to the new Java date time API is definitely the way to go.
+
+
+
+Check out the source code [here](https://github.com/lcr95/java-example/blob/main/java8-date-example/src/main/java/com/example/java8/date/jdbc/JdbcExample.java).
+
