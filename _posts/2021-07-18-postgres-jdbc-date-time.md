@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Postgres JDBC - Date Time"
+title: "JDBC - Date Time"
 subtitle: ""
 date: 2021-07-18
 author: "ChenRiang"
