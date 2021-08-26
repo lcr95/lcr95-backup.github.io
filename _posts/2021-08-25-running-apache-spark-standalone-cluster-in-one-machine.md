@@ -27,7 +27,7 @@ Apache Spark is a complex framework that provide parallelized in-memory data pro
 
 3. Start Spark Worker.
 
-   ```
+   ```bash
    ./bin/spark-class org.apache.spark.deploy.worker.Worker spark://`hostname`:7077
    ```
 
@@ -36,7 +36,10 @@ Apache Spark is a complex framework that provide parallelized in-memory data pro
 4. Submit spark job
 
    ```bash
-   ./bin/spark-submit  --class <your main class>  --master spark://`hostname`:7077  <your jar file> 
+   ./bin/spark-submit \
+      --class <your main class> \
+      --master spark://`hostname`:7077 \
+      <your jar file> 
    ```
 
    
