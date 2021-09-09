@@ -42,5 +42,13 @@ Apache Spark is a complex framework that provide parallelized in-memory data pro
       <your jar file> 
    ```
 
-   
+5. To stop Spark worker simply press `Ctrl-C`
+
+6. To stop Spark master , run the following command 
+
+   ```bash
+   ./sbin/stop-master.sh
+   ```
+
+    
 
