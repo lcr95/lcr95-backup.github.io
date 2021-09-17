@@ -13,7 +13,7 @@ tags:
 
 
 
-In previous blog [post]({% post_url 2021-09-09-delta-lake-the-next-gen-data-lake %}), we walk through some basic CRUD operations on Delta Lake. However, if you're a Java application developer, you might just want to focus on the SQL query logic without having to worry about the details of Spark.
+In previous blog [post]({% post_url 2021-09-09-delta-lake-the-next-gen-data-lake %}), we walk through some basic CRUD operations on Delta Lake. However, if you're a Java application developer, you might just want to focus on the SQL query logic without having to worry about the implementation details of Spark job.
 
 > "Can I access Delta Lake with JDBC? "
 
