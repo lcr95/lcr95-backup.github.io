@@ -8,6 +8,7 @@ header-style: text
 catalog: true
 tags:
     - Java
+    - Redis	
 ---
 
 
