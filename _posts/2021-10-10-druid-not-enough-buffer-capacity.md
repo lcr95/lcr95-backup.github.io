@@ -15,9 +15,7 @@ When running a groupby query with huge aggregation process and follow by sub sel
 
 
 
-```
-Not enough capacity for even one row! Need[xx] but have[0]
-```
+> Not enough capacity for even one row! Need[xx] but have[0]
 
 
 
