@@ -13,9 +13,7 @@ tags:
 
 Today after a force reboot, I get a ZSH history file corruption error message.
 
-```text
-zsh: corrupt history file /home/chenriang/.zsh_history
-```
+> zsh: corrupt history file /home/chenriang/.zsh_history
 
 <br>
 
