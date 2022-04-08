@@ -1,5 +1,4 @@
-***
-
+---
 layout: post
 title: "Redis -  ERR EXEC without MULTI exception"
 subtitle: ""
@@ -7,11 +6,13 @@ date: 2021-11-24
 author: "ChenRiang"
 header-style: text
 tags:
-\- Redis
-\- Spring
-\- Java
+    - Redis
+    - Java
+    - Spring
 
-***
+---
+
+
 
 Today, I hit an exception when I tried to code my Redis logic to be transactional.
 
@@ -70,6 +71,8 @@ redisTemplate.execute(new SessionCallback<List<Object>>() {
     }
 });
 ```
+
+***Note: This solution only work for Redis standalone mode as cluster mode does not support command like `watch`. Execute the logic using Lua script could be the solution for cluster mode.*** 
 
 ***
 
