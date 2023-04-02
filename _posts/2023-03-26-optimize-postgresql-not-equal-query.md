@@ -2,7 +2,7 @@
 layout: post
 title: "Optimize SQL Queires with Not-Equal Operator"
 subtitle: ""
-date: 2023-02-26
+date: 2023-03-26
 author: "ChenRiang"
 header-style: text
 tags:
